@@ -1,8 +1,32 @@
+
+
 body {
   font-family: Arial;
-  background-color: #5a87e2;
+  background-color: #85946b;
+  padding-top: 60px;
+  margin: 0;
 }
 
 h1 {
   color: rgb(5, 5, 47);
+}
+.navbar {
+  align-items: center;
+  background: transparent;
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 100rem;
+  padding: 15px 30px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  gap: 20px;
+}
+
+.content{
+    padding-top: 70px;
 }

@@ -5,75 +5,94 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Sasha Palmer</h1>
-    <p>Software Developer</p>
-
-    <nav>
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a href="#cv">Download CV</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="index.html" class="navbar-logo">CSSnippets</a>
+            <button class="navbar-toogle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#cv">Download CV</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
     </nav>
 
-    <section id="about">
-      <h1>About Me</h1>
-      <h3>
-        Software Development graduate looking to break into the industry and
-        build things that actually make a difference. Outside of my studies, I
-        work as an educator supporting adults with special needs — which has
-        taught me more about patience, clear communication, and problem-solving
-        under pressure than any classroom ever could. I'm a quick learner who
-        thrives in team settings and is genuinely excited to bring that same
-        people-first mindset into a development role.
-      </h3>
+    <div class="content">
+      <h1>Sasha Palmer</h1>
+      <p>Software Developer</p>
 
-      <button>Hire Me</button>
-    </section>
+      <section id="about">
+        <h3>
+          Software Development graduate looking to break into the industry and
+          build things that actually make a difference. Outside of my studies, I
+          work as an educator supporting adults with special needs — which has
+          taught me more about patience, clear communication, and
+          problem-solving under pressure than any classroom ever could. I'm a
+          quick learner who thrives in team settings and is genuinely excited to
+          bring that same people-first mindset into a development role.
+        </h3>
 
-    <section id="skills">
-      <h1>Skills & Technologies</h1>
-      <h2>
-        I am familiar with a variety of programming languages and always
-        expanding my skills
-      </h2>
-      <button>PHP</button>
-      <button>JavaScript</button>
-      <button>Python</button>
-      <button>HTML</button>
-      <button>CSS</button>
-      <button>SQL</button>
-      <button>Java</button>
-      <button>GitHub</button>
-      <button>MySQL</button>
-      <button>PyCharm</button>
-    </section>
+        <button>Hire Me</button>
+    </div>
+      </section>
 
-    <section id="projects">
-      <h1>Projects</h1>
-    </section>
+      <section id="skills">
+        <h1>Skills & Technologies</h1>
+        <h2>
+          I am familiar with a variety of programming languages and always
+          expanding my skills
+        </h2>
+        <button>PHP</button>
+        <button>JavaScript</button>
+        <button>Python</button>
+        <button>HTML</button>
+        <button>CSS</button>
+        <button>SQL</button>
+        <button>Java</button>
+        <button>GitHub</button>
+        <button>MySQL</button>
+        <button>PyCharm</button>
+      </section>
 
-    <section id="contact">
-      <h1>Contact Me</h1>
-      <h2>
-        Please fill out the form below so we can discuss any work opportunities
-      </h2>
+      <section id="projects">
+        <h1>Projects</h1>
+      </section>
 
-      <form action="">
-        <fieldset>
-          <legend>Contact:</legend>
-          <label for="fname"> Name:</label><br />
-          <input type="text" id="fname" name="fname" value="John" /><br />
-          <label for="email">Email:</label><br />
-          <input type="text" id="email" name="email" value="Doe" /><br /><br />
+      <section id="contact">
+        <h1>Contact Me</h1>
+        <h2>
+          Please fill out the form below so we can discuss any work
+          opportunities
+        </h2>
 
-          <textarea name="message" rows="10" cols="30">
+        <form action="">
+          <fieldset>
+            <legend>Contact:</legend>
+            <label for="fname"> Name:</label><br />
+            <input type="text" id="fname" name="fname" value="John" /><br />
+            <label for="email">Email:</label><br />
+            <input
+              type="text"
+              id="email"
+              name="email"
+              value="Doe"
+            /><br /><br />
+
+            <textarea name="message" rows="10" cols="30">
 The cat was playing in the garden.
         </textarea
-          >
-          <input type="submit" value="Submit" />
-        </fieldset>
-      </form>
-    </section>
+            >
+            <input type="submit" value="Submit" />
+          </fieldset>
+        </form>
+      </section>
+    
   </body>
+  <script src="script.js"></script>
 </html>
