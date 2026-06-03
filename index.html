@@ -2,30 +2,41 @@
 <html>
   <head>
     <title>Sasha Palmer</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+  
   </head>
   <body>
-    <nav class="navbar">
-        <div class="navbar-container">
-            <a href="index.html" class="navbar-logo">CSSnippets</a>
-            <button class="navbar-toogle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            <ul class="navbar-menu">
-      <li><a href="#about">About</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#cv">Download CV</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    </div>
+    <!--Nav Menu-->
+    <nav>
+        <div class="nav-container">
+          <div class="logo">
+            <span>Sasha Palmer</span>
+            <p>Software Developer</p>
+          </div>
+          <div class="links">
+             <div class="link"><a href="#">Home</a></div>
+             <div class="link"><a href="#">About</a></div>
+             <div class="link"><a href="#">Skills</a></div>
+             <div class="link"><a href="#">Contact</a></div>
+             
+          </div>
+          <i class="fa-solid fa-bars hamburg" onclick="hamburg()" aria-label="Open menu" role="button" tabindex="0"></i> 
+        </div>
+      <div class="dropdown">
+        
+        <div class="links">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Contact</a>
+          <div class="fa-solid fa-xmark cancel" onclick="closeMenu()"></i>
+        </div>
+      </div>
     </nav>
 
     <div class="content">
-      <h1>Sasha Palmer</h1>
-      <p>Software Developer</p>
+    
 
       <section id="about">
         <h3>
