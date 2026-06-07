@@ -81,3 +81,60 @@ nav {
   font-weight: 550;
   transition: 0.3s linear;
 }
+
+.nav-container .links a::before {
+  position: absolute;
+  content: "";
+  bottom: -3px;
+  width: 0%;
+  left: 0;
+  height: 3px;
+  background-color: #b74b4b;
+  transition: 0.2s linear;
+}
+
+.nav-container .links a:hover::before {
+  width: 100%;
+}
+
+.nav-container .links a:hover {
+  color: #b74b4b;
+}
+
+.dropdown {
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  transform: translateY(-500ox);
+  width: 100%;
+  height: auto;
+  backdrop-filter: blur(4px) brightness(40%);
+  box-shadow: 0 0 20px black;
+  transition: 0.2s linear;
+}
+
+.dropdown .links a {
+  display: flex;
+  color: white;
+  text-decoration: none;
+  justify-content: center;
+  padding: 15px 0;
+  align-items: center;
+  transition: 0.2s linear;
+}
+
+.dropdown .links a:hover {
+  background-color: #b74b4b;
+}
+
+section {
+  width: 100%;
+  min-height: 90vh;
+}
+
+section .main-container {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 100px;
+  align-items: center;
+}
