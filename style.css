@@ -105,7 +105,7 @@ nav {
   z-index: 100;
   position: absolute;
   top: 0;
-  transform: translateY(-500ox);
+  transform: translateY(-500px);
   width: 100%;
   height: auto;
   backdrop-filter: blur(4px) brightness(40%);
@@ -137,4 +137,32 @@ section .main-container {
   justify-content: space-between;
   padding-left: 100px;
   align-items: center;
+}
+
+.main-container .image {
+  width: 500px;
+  height: 80vh;
+  border-radius: 100%;
+  overflow: hidden;
+  box-shadow: 0 0 50px #b74b4b;
+}
+
+.main-container .image img {
+  width: 100%;
+}
+
+.main-container .image:hover {
+  animation: animate 1.5s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0% {
+    scale: 1;
+  }
+  50% {
+    scale: 1.05;
+  }
+  100% {
+    scale: 1;
+  }
 }
