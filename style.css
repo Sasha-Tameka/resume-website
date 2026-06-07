@@ -1,33 +1,83 @@
 /*Google Font CDN Link*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B");
 
-body {
-  font-family: Arial;
-  background-color: #85946b;
-  padding-top: 60px;
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border;
+  font-family: "Poppins,sans-serif";
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
-h1 {
-  color: rgb(5, 5, 47);
+body {
+  width: 100;
+  height: auto;
+  background-color: black;
+  overflow-x: hidden;
 }
-.navbar {
-  align-items: center;
-  background: transparent;
-  display: flex;
-  height: 80px;
-  justify-content: center;
-  margin: 0 auto;
-  max-width: 100rem;
-  padding: 15px 30px;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+/*Custom Scroll Bar CSS*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #b74b4b;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #b74b4b;
+}
+/*navbar styling*/
+nav {
   width: 100%;
-  z-index: 1000;
-  gap: 20px;
+  height: 10vh;
 }
 
-.content{
-    padding-top: 70px;
+.nav-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.logo span {
+  color: #b74b4b;
+  text-shadow: 0 0 10px #b74b4b;
+}
+.hanburg,
+.cancel {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  color: white;
+  opacity: 0;
+  pointer-events: none;
+  font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+}
+
+.nav-container.links {
+  display: flex;
+}
+
+.nav-container.links a {
+  position: relative;
+  font-size: 1.2rem;
+  color: white;
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 550;
+  transition: 0.3s linear;
 }
