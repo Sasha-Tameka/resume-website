@@ -42,7 +42,7 @@ nav {
   width: 100%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -50,6 +50,8 @@ nav {
   color: white;
   font-size: 2rem;
   font-weight: bold;
+  padding-right: 40px;
+  padding-left: 60px;
 }
 
 .logo span {
@@ -134,9 +136,10 @@ section {
 
 section .main-container {
   display: flex;
-  justify-content: space-between;
-  padding-left: 100px;
+  justify-content: flex-start;
+  padding-left: 20px;
   align-items: center;
+  gap: 30px;
 }
 
 .main-container .image {
@@ -208,6 +211,51 @@ section .main-container {
 }
 
 .nav-content p {
-  font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
+  font-size: clamp(0.8rem, 0.5rem + 1vw, 1rem);
   margin: 10px 0;
+}
+
+.social-links i {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: transparent;
+  border: 0.2rem solid #b74b4b;
+  border-radius: 50%;
+  color: #b74b4b;
+  margin: 5px 15px;
+  font-size: 1.5rem;
+  transition: 0.2s linear;
+}
+
+.social-links i:hover {
+  scale: 1.3em;
+  color: black;
+  background-color: #b74b4b;
+  filter: drop-shadow(0 0 10px #b74b4b);
+}
+
+.btn button {
+  width: 50%;
+  height: 6vh;
+  margin: 30px;
+  background-color: #b74b4b;
+  color: white;
+  border: none;
+  outline: none;
+  font-size: 120%;
+  font-weight: 700;
+  border-radius: 5px;
+  transition: 0.2s linear;
+}
+
+.btn button:hover {
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #b74b4b;
 }
