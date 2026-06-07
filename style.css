@@ -68,11 +68,11 @@ nav {
   font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
 }
 
-.nav-container.links {
+.nav-container .links {
   display: flex;
 }
 
-.nav-container.links a {
+.nav-container .links a {
   position: relative;
   font-size: 1.2rem;
   color: white;
