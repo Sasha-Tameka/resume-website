@@ -19,7 +19,9 @@
         <div class="links">
           <div class="link"><a href="#">Home</a></div>
           <div class="link"><a href="#">About</a></div>
+          <div class="link"><a href="#">Education</a></div>
           <div class="link"><a href="#">Skills</a></div>
+          <div class="link"><a href="#">Experience</a></div>
           <div class="link"><a href="#">Contact</a></div>
         </div>
         <i
@@ -34,12 +36,14 @@
         <div class="links">
           <a href="#">Home</a>
           <a href="#">About</a>
+          <a href="#">Education</a>
           <a href="#">Skills</a>
+          <a href="#">Experience</a>
           <a href="#">Contact</a>
           <i
             class="fa-solid fa-xmark cancel"
             onclick="closeMenu()"
-            aria-label="Open menu"
+            aria-label="Close menu"
             role="button"
             tabindex="0"
           ></i>
@@ -58,8 +62,8 @@
             <span>Sasha Palmer</span>
           </h1>
           <div class="typewriter">
-            <h2>I'm a</h2>
-            <h2 class="typewriter-text"></h2>
+            I'm a
+            <span class="typewriter-text"></span>
             <span class="cursor">|</span>
           </div>
           <p>
@@ -120,9 +124,12 @@
     <section class="skills" id="skills">
       <div class="content">
         <div class="title"><span>Skills & Technologies</span></div>
-        <p data-aos="fade-right">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
-        </p>
+        <div class="skills-details">
+          <p data-aos="fade-right">
+            I'm familiar with a variety of programming technologies, and I'm
+            always expanding my skill set.
+          </p>
+        </div>
         <div class="boxes">
           <div class="box">
             <div class="topic">CSS</div>
@@ -168,19 +175,27 @@
           <fieldset>
             <legend>Contact:</legend>
             <label for="fname"> Name:</label><br />
-            <input type="text" id="fname" name="fname" value="John" /><br />
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Your name"
+            /><br />
             <label for="email">Email:</label><br />
             <input
               type="text"
               id="email"
               name="email"
-              value="Doe"
+              placeholder="Your email"
             /><br /><br />
 
-            <textarea name="message" rows="10" cols="30">
-The cat was playing in the garden.
-        </textarea
-            >
+            <textarea
+              name="message"
+              rows="10"
+              cols="30"
+              placeholder="Your message"
+            ></textarea>
+
             <input type="submit" value="Submit" />
           </fieldset>
         </form>
