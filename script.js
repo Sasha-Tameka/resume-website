@@ -1,4 +1,3 @@
-/*EmailJS */
 emailjs.init("UYRy36jT937LKCpWn");
 
 document
@@ -10,15 +9,15 @@ document
     status.textContent = "Sending...";
 
     emailjs
-      .sendForm("service_8zkrcgo", "template_jqxqc9c", this)
+      .sendForm("service_d60vkov", "template_jqxqc9c", this)
       .then(() => {
         status.textContent = "Message sent successfully!";
-        status.style.color = "4bb7744";
-        this.resizeTo();
+        status.style.color = "#4bb774";
+        this.reset();
       })
-
-      .catch(() => {
+      .catch((error) => {
         status.textContent = "Something went wrong. Please try again.";
-        status.style.color = "b74b4b";
+        status.style.color = "#b74b4b";
+        console.log(error); // add this to see the exact error in browser console
       });
   });
