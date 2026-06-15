@@ -11,19 +11,22 @@
   </head>
   <body>
     <!--Nav Menu-->
+
+
     <nav>
       <div class="nav-container">
+
         <div class="logo">
-          <span>Sasha Palmer</span>
+          <span></span>
         </div>
         <div class="links">
-          <div class="link"><a href="#">Home</a></div>
           <div class="link"><a href="#">About</a></div>
-          <div class="link"><a href="#">Education</a></div>
-          <div class="link"><a href="#">Skills</a></div>
-          <div class="link"><a href="#">Experience</a></div>
-          <div class="link"><a href="#">Contact</a></div>
+          <div class="link"><a href="#skills">Skills</a></div>
+          <div class="link"><a href="#projects">Projects</a></div>
+          <div class="link"><a href="Sasha Palmer revisedcv.pdf" download="Sasha Palmer revisedcv.pdf">Download CV</a></div>
         </div>
+        <a href="#contact" class="contact-btn">
+          <span>💬</span> Contact me</a>
         <i
           class="fa-solid fa-bars hamburg"
           onclick="hamburg()"
@@ -34,11 +37,9 @@
       </div>
       <div class="dropdown">
         <div class="links">
-          <a href="#">Home</a>
           <a href="#">About</a>
-          <a href="#">Education</a>
-          <a href="#">Skills</a>
-          <a href="#">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
           <a href="#">Contact</a>
           <i
             class="fa-solid fa-xmark cancel"
@@ -85,41 +86,14 @@
             </a>
           </div>
           <div class="btn">
-            <button>Hire Me</button>
+            <a href="#contact" class="hire-btn">Hire Me</a>
+    
           </div>
         </div>
       </div>
     </section>
 
-    <!--About Section-->
-
-    <section class="about" id="about">
-      <div class="content">
-        <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <img src="resume.png" alt="" />
-          </div>
-          <div class="right">
-            <div class="topic">Lorem ipsum dol</div>
-            <p>
-              Software Development graduate looking to break into the industry
-              and build things that actually make a difference. Outside of my
-              studies, I work as an educator supporting adults with special
-              needs — which has taught me more about patience, clear
-              communication, and problem-solving under pressure than any
-              classroom ever could. I'm a quick learner who thrives in team
-              settings and is genuinely excited to bring that same people-first
-              mindset into a development role.
-            </p>
-            <div class="button">
-              <button>Download CV</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  
     <!--My Skills-->
     <section class="skills" id="skills">
       <div class="content">
@@ -131,37 +105,66 @@
           </p>
         </div>
         <div class="boxes">
-          <div class="box">
-            <div class="topic">CSS</div>
-          </div>
-          <div class="box">
-            <div class="topic">HTML</div>
-          </div>
-          <div class="box">
-            <div class="topic">Javascript</div>
-          </div>
-          <div class="box">
-            <div class="topic">Python</div>
-          </div>
-          <div class="box">
-            <div class="topic">SQL</div>
-          </div>
-          <div class="box">
-            <div class="topic">MySQL</div>
-          </div>
-          <div class="box">
-            <div class="topic">Java</div>
-          </div>
-          <div class="box">
-            <div class="topic">GitHub</div>
-          </div>
-          <div class="box">
-            <div class="topic">PyCharm</div>
-          </div>
-          <div class="box">
-            <div class="topic">PHP</div>
-          </div>
+          <div class="box">CSS</div>
+          <div class="box">HTML</div>
+          <div class="box">Javascript</div>
+          <div class="box">Python</div>
+          <div class="box">SQL</div>
+          <div class="box">MySQL</div>
+          <div class="box">Java</div>
+          <div class="box">GitHub</div>
+          <div class="box">PyCharm</div>
+          <div class="box">PHP</div>
         </div>
+      </div>
+    </section>
+
+    <!--My Projects-->
+    <section class="projects" id="projects">
+      <div class="content">
+        <div class="title"><span>My Projects</span></div>
+        <div class="skills-details">
+          <p data-aos="fade-right">
+            Here you will find a diverse collection of my projects,
+            demonstrating my journey into the world of programming, covering a
+            variety of technologies and systems development skills. The projects
+            are not currently licensed. It is for educational purposes and
+            demonstration only.
+          </p>
+        </div>
+        <div class="container">
+
+          <div class="card">
+            <span class="badge web">Web</span>
+            <h3>Personal Expenses Managment</h3>
+            <div class="tags">
+              <span>React.js</span>
+              <span>PHP</span>
+              <span>MySQL</span>
+            </div>
+          </div>
+          
+          <div class="card">
+            <span class="badge desktop">Desktop</span>
+            <h3>Bank System</h3>
+            <div class="tags">
+              <span>Java</span>
+              <span>PL/SQL</span>
+              <span>Swing WindowBuilder</span>
+            </div>
+          </div>
+
+          <div class="card">
+            <span class="badge web">Web</span>
+            <h3>Restaurant Menu</h3>
+            <div class="tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+          </div>
+
+        
       </div>
     </section>
 
@@ -171,33 +174,23 @@
         <div class="title">
           <span>Contact Me</span>
         </div>
+        <p class="contact-subtext"
+        >Please fill out the form below so we can discuss any work opportunities. </p>
         <form action="">
-          <fieldset>
-            <legend>Contact:</legend>
-            <label for="fname"> Name:</label><br />
             <input
               type="text"
-              id="fname"
-              name="fname"
-              placeholder="Your name"
-            /><br />
-            <label for="email">Email:</label><br />
+              placeholder="Name"
+            />
             <input
               type="text"
-              id="email"
-              name="email"
-              placeholder="Your email"
-            /><br /><br />
-
+              placeholder="E-mail"
+            />
             <textarea
               name="message"
-              rows="10"
-              cols="30"
-              placeholder="Your message"
+              rows="6"
+              placeholder="Message"
             ></textarea>
-
-            <input type="submit" value="Submit" />
-          </fieldset>
+            <button type="submit">Submit</button>
         </form>
       </div>
     </section>
@@ -206,8 +199,7 @@
     <footer>
       <div class="text">
         <span
-          >Created By <a href="#">Sasha Palmer</a> | &copy; 2026 All Rights
-          Reserved</span
+          >&copy; 2026 Sasha Palmer</span
         >
       </div>
     </footer>

@@ -33,6 +33,28 @@ body {
   background: #b74b4b;
 }
 /*navbar styling*/
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #b74b4b;
+  color: white;
+  text-decoration: none;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  transition: background 0.3s ease;
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.contact-btn:hover {
+  background: #962e2e;
+}
+
 nav {
   width: 100%;
   height: 10vh;
@@ -237,7 +259,7 @@ section .main-container {
   filter: drop-shadow(0 0 10px #b74b4b);
 }
 
-.btn button {
+.btn .hire-btn {
   width: 50%;
   height: 6vh;
   margin: 30px;
@@ -247,11 +269,14 @@ section .main-container {
   outline: none;
   font-size: 120%;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 8px;
   transition: 0.2s linear;
+  display: inline-block;
+  text-align: center;
+  line-height: 6vh;
 }
 
-.btn button:hover {
+.btn .hire-btn:hover {
   scale: 1.1;
   color: #b74b4b;
   border: 2px solid #b74b4b;
@@ -270,12 +295,13 @@ section .content {
 .about .about-details {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  gap: 40px;
 }
 section .title {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 section .title span {
@@ -304,75 +330,232 @@ section .title span::after {
   transform: translateX(-50%);
 }
 
-.about {
-  padding-bottom: 20px;
-}
-.about .about-details .left {
-  width: 45%;
-}
-
-.about .left img {
-  height: 400px;
-  width: 400px;
-  object-fit: cover;
-  border-radius: 12px;
+.skills .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
 }
 
-.about-details .right {
-  width: 55%;
-}
-
-section .topic {
+.skills .boxes .box {
+  background: transparent;
+  border: 2px solid #b74b4b;
   color: white;
-  font-size: 25px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: default;
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+  padding: 0.5rem;
 }
 
-.about-details .right p {
-  text-align: justify;
-  color: white;
-}
-
-section .button {
-  margin: 16px 0;
-}
-
-section .button button {
-  outline: none;
-  padding: 8px 16px;
-  border-radius: 4px;
-  font-size: 25px;
-  font-weight: 400;
+.skills .boxes .box:hover {
   background: #b74b4b;
   color: #fff;
-  border: 2px solid transparent;
-  cursor: pointer;
-  transition: all 0.4s ease;
-}
-
-section .button button:hover {
-  border-color: #b74b4b;
-  background-color: #fff;
-  color: #b74b4b;
-}
-
-.skills {
-  background: black;
-}
-
-.skills .content {
-  padding: 40px 0;
 }
 
 .skills .skills-details {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
-.skills-details p {
+.skills .skills-details p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 60rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  margin: 0 auto 24px auto;
+}
+
+/*My Projects*/
+
+.projects {
+  background: #000;
+  padding: 40px 0;
+}
+
+.projects .skills-details p {
+  text-align: center;
   color: white;
-  text-align: justify;
-  width: 50%;
+  margin-bottom: 40px;
+}
+
+.projects .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.projects .card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 40px 20px 20px 20px;
+  position: relative;
+  min-height: 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(225, 225, 225, 0.05);
+  transition: 0.3s ease;
+}
+
+.projects .card h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  margin: 10px 0 20px 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*Platform Badge*/
+
+.projects .badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+.projects .badge.web {
+  background: transparent;
+  border: 2px solid #b74b4b;
+  color: #b74b4b;
+}
+
+.projects .badge.desktop {
+  background: transparent;
+  border: 2px solid #4b7bb7;
+  color: #4b7bb7;
+}
+
+.projects .badge.mobile {
+  background: transparent;
+  border: 2px solid #4bb774;
+  color: #4bb774;
+}
+
+/* Tech tags */
+.projects .tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.projects .tags span {
+  border: 1px solid #555;
+  color: #ccc;
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .projects .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .projects .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Contact Me*/
+
+.contact {
+  background: #000;
+  padding: 60px 0;
+}
+
+.contact .title span {
+  color: white;
+}
+
+.contact .contact-subtext {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact form input,
+.contact form textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 30px;
+  border: none;
+  background: #1a1a1a;
+  color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact form textarea {
+  border-radius: 16px; /* less round than inputs */
+  resize: vertical;
+}
+
+.contact form input::placeholder,
+.contact form textarea::placeholder {
+  color: #888;
+}
+
+.contact form button {
+  align-self: center;
+  padding: 12px 40px;
+  border-radius: 30px;
+  border: none;
+  background: #b74b4b;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact form button:hover {
+  background: #962e2e;
+}
+
+/* Footer */
+
+footer {
+  background: #000;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #fff;
+  color: #f1f1f1;
 }
