@@ -388,7 +388,6 @@ section .title span::after {
   font-size: 1.2rem;
   font-weight: 300;
   max-width: 60rem;
-  padding: 0.2rem;
   box-sizing: border-box;
   text-decoration: none;
   background: transparent;
@@ -409,9 +408,20 @@ section .title span::after {
 }
 
 .projects .skills-details p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 60rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
   text-align: center;
-  color: white;
-  margin-bottom: 40px;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  margin: 0 auto 24px auto;
 }
 
 .projects .container {
@@ -516,10 +526,20 @@ section .title span::after {
 }
 
 .contact .contact-subtext {
-  color: white;
-  text-align: center;
-  margin-bottom: 30px;
+  font-size: 1.2rem;
+  font-weight: 300;
+  max-width: 60rem;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  background: transparent;
   font-family: "Poppins", sans-serif;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  width: 100%;
+  margin: 0 auto 24px auto;
 }
 
 .contact form {
