@@ -357,6 +357,21 @@ section .title span::after {
     background 0.3s ease,
     color 0.3s ease;
   padding: 0.5rem;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.skills .boxes .box:hover .skill-icon {
+  display: inline-block;
 }
 
 .skills .boxes .box:hover {
