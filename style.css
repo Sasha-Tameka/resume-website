@@ -49,10 +49,16 @@ body {
   transition: background 0.3s ease;
   margin-top: 20px;
   margin-left: 40px;
+  margin-right: 40px;
 }
 
 .contact-btn:hover {
-  background: #962e2e;
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #b74b4b;
 }
 
 nav {
@@ -547,7 +553,12 @@ section .title span::after {
 }
 
 .contact form button:hover {
-  background: #962e2e;
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #b74b4b;
 }
 
 /* Footer */
