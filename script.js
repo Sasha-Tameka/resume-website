@@ -1,3 +1,4 @@
+/*Email JS*/
 emailjs.init("UYRy36jT937LKCpWn");
 
 document
@@ -18,6 +19,39 @@ document
       .catch((error) => {
         status.textContent = "Something went wrong. Please try again.";
         status.style.color = "#b74b4b";
-        console.log(error); // add this to see the exact error in browser console
+        console.log(error);
       });
   });
+
+/**Typewriter function */
+
+const texts = ["Software Developer", "Problem Solver"];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+
+function typeWriter() {
+  const typewriterText = document.querySelector(".typewriter-text");
+  const currentText = texts[textIndex];
+
+  if (isDeleting) {
+    typewriterText.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    typewriterText.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+  }
+
+  if (!isDeleting && charIndex === currentText.length) {
+    isDeleting = true;
+    setTimeout(typeWriter, 1500);
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    textIndex = (textIndex + 1) % texts.length;
+    setTimeout(typeWriter, 500);
+  } else {
+    setTimeout(typeWriter, isDeleting ? 50 : 100);
+  }
+}
+
+typeWriter();
