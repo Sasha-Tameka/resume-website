@@ -55,3 +55,30 @@ function typeWriter() {
 }
 
 typeWriter();
+
+/**Modal Cards */
+
+function openModal(card) {
+  const overlay = document.getElementById("modal-overlay");
+
+  document.querySelector(".modal-title").textContent = card.dataset.title;
+
+  document.querySelector(".modal-description").textContent =
+    card.dataset.description;
+
+  document.querySelector(".modal-image").src = card.dataset.image;
+
+  document.querySelector(".modal-btn").href = card.dataset.github;
+
+  overlay.classList.add("active");
+}
+
+function closeModal() {
+  document.getElementById("modal-overlay").classList.remove("active");
+}
+
+document
+  .getElementById("modal-overlay")
+  .addEventListener("click", function (e) {
+    if (e.target === this) closeModal();
+  });

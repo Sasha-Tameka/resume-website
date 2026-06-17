@@ -135,7 +135,7 @@
         </div>
         <div class="container">
 
-          <div class="card">
+          <div class="card" onclick="openModal(this)" data-title="Personal Expenses Management" data-description="A personal expenses managment" data-image="icons/project1.png" data-github="https://github.com/sasha-tameka/project-repo">
             <span class="badge web">Web</span>
             <h3>Personal Expenses Managment</h3>
             <div class="tags">
@@ -164,10 +164,19 @@
               <span>JavaScript</span>
             </div>
           </div>
-
-        
+        </div>
+      </section>
+      
+      <!--Project Modal-->
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal">
+          <button class="modal-close" onclick="closeModal()">X</button>
+          <h2 class="modal-title"></h2>
+          <p class="modal-description"></p>
+          <img class="modal-image"  src="" alt="Project Screenshot">
+          <a class="modal-btn" href="#" target="_blank">View Code</a>
+        </div>
       </div>
-    </section>
 
     <!--Contact Me-->
     <section class="contact" id="contact">
@@ -198,6 +207,7 @@
         <p id="form-status"></p>
       </div>
     </section>
+
 
     <!--Footer Section-->
     <footer>
