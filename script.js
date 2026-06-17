@@ -60,15 +60,24 @@ typeWriter();
 
 function openModal(card) {
   const overlay = document.getElementById("modal-overlay");
+  const image = document.querySelector(".modal-image");
+  const video = document.querySelector(".modal-video");
 
   document.querySelector(".modal-title").textContent = card.dataset.title;
-
   document.querySelector(".modal-description").textContent =
     card.dataset.description;
-
-  document.querySelector(".modal-image").src = card.dataset.image;
-
   document.querySelector(".modal-btn").href = card.dataset.github;
+
+  if (card.dataset.video) {
+    video.querySelector("source").src = card.dataset.video;
+    video.load();
+    video.style.display = "block";
+    image.style.display = "none";
+  } else {
+    image.src = card.dataset.image;
+    image.style.display = "block";
+    video.style.display = "none";
+  }
 
   overlay.classList.add("active");
 }

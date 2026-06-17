@@ -134,14 +134,12 @@
           </p>
         </div>
         <div class="container">
-
-          <div class="card" onclick="openModal(this)" data-title="Personal Expenses Management" data-description="A personal expenses managment" data-image="icons/project1.png" data-github="https://github.com/sasha-tameka/project-repo">
+          
+          <div class="card" onclick="openModal(this)" data-title="Calculator" data-description="Command-line calculator built in Python featuring comprehensive error handling, calculation history tracking, and intelligent input validation." data-video="icons/videos/calculator.mp4" data-github="https://github.com/Sasha-Tameka/calculator">
             <span class="badge web">Web</span>
-            <h3>Personal Expenses Managment</h3>
+            <h3>Calculator</h3>
             <div class="tags">
-              <span>React.js</span>
-              <span>PHP</span>
-              <span>MySQL</span>
+              <span>Python</span>
             </div>
           </div>
           
@@ -167,16 +165,7 @@
         </div>
       </section>
       
-      <!--Project Modal-->
-      <div class="modal-overlay" id="modal-overlay">
-        <div class="modal">
-          <button class="modal-close" onclick="closeModal()">X</button>
-          <h2 class="modal-title"></h2>
-          <p class="modal-description"></p>
-          <img class="modal-image"  src="" alt="Project Screenshot">
-          <a class="modal-btn" href="#" target="_blank">View Code</a>
-        </div>
-      </div>
+
 
     <!--Contact Me-->
     <section class="contact" id="contact">
@@ -217,6 +206,20 @@
         >
       </div>
     </footer>
+
+    <!--Project Modal-->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal">
+        <button class="modal-close" onclick="closeModal()">X</button>
+        <h2 class="modal-title"></h2>
+        <p class="modal-description"></p>
+        <img class="modal-image"  src="" alt="Project Screenshot">
+        <video  class="modal-video" controls>
+          <source src="" type="video/mp4">
+        </video> 
+        <a class="modal-btn" href="https://github.com/Sasha-Tameka/calculator" target="_blank">View Code</a>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
-</html>
+  </html>

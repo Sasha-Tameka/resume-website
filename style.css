@@ -536,17 +536,26 @@ section .title span::after {
   align-items: center;
 }
 
-.modal-overlay .active {
+.modal-overlay.active {
   display: flex;
 }
 
 .modal {
   background: #1a1a1a;
   border-radius: 12px;
-  padding: 40px;
-  max-width: 90%;
+  padding: 30px;
+  max-width: 700px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
   position: relative;
   text-align: center;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+}
+
+.modal::-webkit-scrollbar {
+  display: none;
 }
 
 .modal-close {
@@ -577,10 +586,16 @@ section .title span::after {
 }
 
 .modal-image {
+  display: none;
+}
+
+.model-video {
   width: 100%;
-  border-radius: 8px;
-  margin-bottom: 24px;
+  max-height: 150px;
   object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: none;
 }
 
 .modal-btn {
