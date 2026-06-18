@@ -544,14 +544,14 @@ section .title span::after {
   background: #1a1a1a;
   border-radius: 12px;
   padding: 30px;
-  max-width: 700px;
+  max-width: 600px;
   width: 90%;
-  max-height: 90vh;
+  max-height: 85vh;
   overflow-y: auto;
   position: relative;
   text-align: center;
   scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none;
+  flex-direction: column;
 }
 
 .modal::-webkit-scrollbar {
@@ -572,9 +572,17 @@ section .title span::after {
 
 .modal-title {
   color: white;
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 16px;
+  font-weight: 400;
+}
+
+.modal-header {
+  color: white;
   font-size: 22px;
   font-family: "Poppins", sans-serif;
-  margin-bottom: 12px;
+  margin-bottom: 16px;
 }
 
 .modal-description {
@@ -589,18 +597,15 @@ section .title span::after {
   display: none;
 }
 
-.model-video {
+.modal-video {
   width: 100%;
-  max-height: 150px;
-  object-fit: cover;
+  height: auto;
   border-radius: 8px;
-  margin-bottom: 16px;
-  display: none;
 }
 
 .modal-btn {
   display: inline-block;
-  padding: 12px 32px;
+  padding: 12px 40px;
   background: #555;
   color: white;
   text-decoration: none;
@@ -608,10 +613,16 @@ section .title span::after {
   font-size: 15px;
   font-family: "Poppins", sans-serif;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .modal-btn:hover {
-  background: #b74b4b;
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #b74b4b;
 }
 
 /*Contact Me*/
