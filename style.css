@@ -167,15 +167,16 @@ section .main-container {
   justify-content: flex-start;
   padding-left: 20px;
   align-items: center;
-  gap: 30px;
+  gap: 80px;
 }
 
 .main-container .image {
-  width: 500px;
-  height: 80vh;
+  width: 400px;
+  height: 70vh;
   border-radius: 100%;
   overflow: hidden;
   box-shadow: 0 0 50px #b74b4b;
+  flex-shrink: 0;
 }
 
 .main-container .image img {
@@ -217,7 +218,7 @@ section .main-container {
 }
 .main-container .nav-content {
   color: white;
-  width: 40%;
+  width: 45%;
 }
 
 .main-container .nav-container h1 {
@@ -398,6 +399,13 @@ section .title span::after {
   margin-bottom: 24px;
   width: 100%;
   margin: 0 auto 24px auto;
+}
+
+.skills,
+.projects,
+.contact {
+  min-height: auto;
+  padding: 100px 0;
 }
 
 /*My Projects*/
