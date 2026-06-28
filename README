@@ -1,0 +1,62 @@
+# Sasha Palmer — Portfolio Website
+
+A personal portfolio site built to showcase my journey into software development, including my projects, technical skills, and background as an educator transitioning into tech.
+
+🔗 **Live site:** [sasha-tameka.github.io/resume-website](https://sasha-tameka.github.io/resume-website/)
+
+## About
+
+I'm a Software Development graduate based in Montréal, looking to break into the tech industry. Outside of my studies, I work as an educator supporting adults with special needs — experience that's taught me patience, clear communication, and problem-solving under pressure. This site is where I bring my coding work together in one place.
+
+## Features
+
+- **Animated hero section** with a typewriter effect cycling through roles
+- **Skills section** — hover-reveal icons for each technology
+- **Projects grid** with click-to-expand modals showing project details, demo videos, and links to source code
+- **Contact form** powered by EmailJS — sends messages directly from the browser, no backend required
+- **Fully responsive** — mobile hamburger navigation and a layout that adapts down to phone-sized screens
+- **Downloadable CV** directly from the nav bar
+
+## Built With
+
+- HTML5
+- CSS3 (custom properties, Flexbox, Grid, media queries)
+- JavaScript (vanilla, no frameworks)
+- [EmailJS](https://www.emailjs.com/) — contact form handling
+- [Font Awesome](https://fontawesome.com/) — icons
+- Google Fonts (Poppins)
+
+## Project Structure
+
+```
+resume-website/
+├── index.html          # Main page markup
+├── style.css           # All styling, including responsive breakpoints
+├── script.js           # Typewriter effect, mobile menu, project modals, EmailJS
+├── icons/              # Skill icons, profile image, project assets
+│   └── videos/         # Project demo clips shown in modals
+└── Sasha Palmer revisedcv.pdf
+```
+
+## Running Locally
+
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/Sasha-Tameka/resume-website.git
+   ```
+2. Open `index.html` directly in your browser, or serve it locally (e.g. with the VS Code "Live Server" extension) for the best experience.
+
+No build step or dependencies needed — it's all static files.
+
+## Deployment
+
+This site is deployed via **GitHub Pages** directly from the `main` branch.
+
+## Contact
+
+- GitHub: [Sasha-Tameka](https://github.com/Sasha-Tameka)
+- LinkedIn: [sasha-palmer-44a400301](https://www.linkedin.com/in/sasha-palmer-44a400301)
+
+## License
+
+This project is for educational and portfolio demonstration purposes only and is not licensed for commercial use.
