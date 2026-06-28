@@ -13,10 +13,8 @@
   <body>
     <!--Nav Menu-->
 
-
     <nav>
       <div class="nav-container">
-
         <div class="logo">
           <span></span>
         </div>
@@ -24,10 +22,15 @@
           <div class="link"><a href="#">About</a></div>
           <div class="link"><a href="#skills">Skills</a></div>
           <div class="link"><a href="#projects">Projects</a></div>
-          <div class="link"><a href="Sasha Palmer revisedcv.pdf" download="Sasha Palmer revisedcv.pdf">Download CV</a></div>
+          <div class="link">
+            <a
+              href="Sasha Palmer revisedcv.pdf"
+              download="Sasha Palmer revisedcv.pdf"
+              >Download CV</a
+            >
+          </div>
         </div>
-        <a href="#contact" class="contact-btn">
-          <span>💬</span> Contact me</a>
+        <a href="#contact" class="contact-btn"> <span>💬</span> Contact me</a>
         <i
           class="fa-solid fa-bars hamburg"
           onclick="hamburg()"
@@ -41,7 +44,7 @@
           <a href="#">About</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
-          <a href="#">Contact</a>
+          <a href="#contact">Contact</a>
           <i
             class="fa-solid fa-xmark cancel"
             onclick="closeMenu()"
@@ -71,30 +74,31 @@
           <p>
             Software Development graduate looking to break into the industry and
             build things that actually make a difference. Outside of my studies,
-            I work as an educator supporting adults with special needs — which
+            I work as an educator supporting adults with special needs, which
             has taught me more about patience, clear communication, and
             problem-solving under pressure than any classroom ever could. I'm a
             quick learner who thrives in team settings and is genuinely excited
-            to bring that same people-first mindset into a development role.
+            to bring that same people first mindset into a development role.
           </p>
 
           <div class="social-links">
             <a href="https://github.com/Sasha-Tameka" target="_blank">
               <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://www.linkedin.com/in/sasha-palmer-44a400301" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/sasha-palmer-44a400301"
+              target="_blank"
+            >
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>
           <div class="btn">
             <a href="#contact" class="hire-btn">Hire Me</a>
-    
           </div>
         </div>
       </div>
     </section>
 
-  
     <!--My Skills-->
     <section class="skills" id="skills">
       <div class="content">
@@ -106,16 +110,51 @@
           </p>
         </div>
         <div class="boxes">
-          <div class="box">CSS <img src="icons/css3.png" class="skill-icon" alt="CSS"></div>
-          <div class="box">HTML <img src="icons/html.png" class="skill-icon" alt="HTML"></div>
-          <div class="box">Javascript <img src="icons/js.png" alt="JavaScript" class="skill-icon"></div>
-          <div class="box">Python <img src="icons/python.png" alt="Python" class="skill-icon"></div>
-          <div class="box">SQL <img src="icons/database.png" alt="SQL" class="skill-icon"></div>
+          <div class="box">
+            CSS <img src="icons/css3.png" class="skill-icon" alt="CSS" />
+          </div>
+          <div class="box">
+            HTML <img src="icons/html.png" class="skill-icon" alt="HTML" />
+          </div>
+          <div class="box">
+            Javascript
+            <img src="icons/js.png" alt="JavaScript" class="skill-icon" />
+          </div>
+          <div class="box">
+            Python
+            <img src="icons/python.png" alt="Python" class="skill-icon" />
+          </div>
+          <div class="box">
+            SQL <img src="icons/database.png" alt="SQL" class="skill-icon" />
+          </div>
           <div class="box">MySQL</div>
-          <div class="box">Java <img src="icons/java.png" alt="Java" class="skill-icon"></div>
-          <div class="box">GitHub <img src="icons/github.png" alt="GitHub" class="skill-icon"></div>
+          <div class="box">
+            Java <img src="icons/java.png" alt="Java" class="skill-icon" />
+          </div>
+          <div class="box">
+            GitHub
+            <img src="icons/github.png" alt="GitHub" class="skill-icon" />
+          </div>
           <div class="box">PyCharm</div>
-          <div class="box">PHP <img src="icons/php.png" alt="PHP" class="skill-icon"></div>
+          <div class="box">
+            PHP <img src="icons/php.png" alt="PHP" class="skill-icon" />
+          </div>
+          <div class="box">
+            Replit
+            <img src="icons/replit.png" alt="Replit" class="skill-icon" />
+          </div>
+          <div class="box">N8N <img src="" alt="N8N" class="skill-icon" /></div>
+        </div>
+        <div class="box">
+          ASP.NET <img src="icons/asp.png" alt="ASP.NET" class="skill-icon" />
+        </div>
+        <div class="box">
+          Visual Studio Code
+          <img
+            src="icons/visual-studio-code.png"
+            alt="Visual Studio Code"
+            class="skill-icon"
+          />
         </div>
       </div>
     </section>
@@ -134,34 +173,59 @@
           </p>
         </div>
         <div class="container">
-          
-          <div class="card" onclick="openModal(this)" data-title="Calculator" data-description="Command-line calculator built in Python featuring comprehensive error handling, calculation history tracking, and intelligent input validation." data-video="icons/videos/cal1.mp4" data-github="https://github.com/Sasha-Tameka/calculator">
+          <div
+            class="card"
+            onclick="openModal(this)"
+            data-title="Calculator"
+            data-description="Command-line calculator built in Python featuring comprehensive error handling, calculation history tracking, and intelligent input validation."
+            data-video="icons/videos/cal1.mp4"
+            data-github="https://github.com/Sasha-Tameka/calculator"
+          >
             <span class="badge web">Terminal</span>
             <h3>Calculator</h3>
             <div class="tags">
               <span>Python</span>
             </div>
           </div>
-          
-          <div class="card" onclick="openModal(this)" data-title="Hangman" data-description="A classic Hangman word-guessing game built in Python, playable in the terminal. Pick a difficulty level, guess letters, and try to reveal the hidden word before you run out of tries." data-video="icons/videos/hangman.mp4" data-github="https://github.com/Sasha-Tameka/hangman.py">
+
+          <div
+            class="card"
+            onclick="openModal(this)"
+            data-title="Hangman"
+            data-description="A classic Hangman word-guessing game built in Python, playable in the terminal. Pick a difficulty level, guess letters, and try to reveal the hidden word before you run out of tries."
+            data-video="icons/videos/hangman.mp4"
+            data-github="https://github.com/Sasha-Tameka/hangman.py"
+          >
             <span class="badge desktop">Terminal</span>
             <h3>Hangman</h3>
             <div class="tags">
               <span>Python</span>
-              
             </div>
           </div>
 
-          <div class="card"onclick="openModal(this)" data-title="Hangman" data-description="A password-protected desktop journaling app built with Python and Tkinter. Log your daily mood, write a short journal entry, and explore patterns in your moods over time with a built-in analytics dashboard." data-video="icons/videos/mood_journal.mp4" data-github="https://github.com/Sasha-Tameka/MoodJournal">
+          <div
+            class="card"
+            onclick="openModal(this)"
+            data-title="Hangman"
+            data-description="A password-protected desktop journaling app built with Python and Tkinter. Log your daily mood, write a short journal entry, and explore patterns in your moods over time with a built-in analytics dashboard."
+            data-video="icons/videos/mood_journal.mp4"
+            data-github="https://github.com/Sasha-Tameka/MoodJournal"
+          >
             <span class="badge web">Desktop</span>
             <h3>Mood Journal</h3>
             <div class="tags">
               <span>Python</span>
               <span>Tkinter</span>
-              
             </div>
           </div>
-          <div class="card"onclick="openModal(this)" data-title="BookStore" data-description="BookHive is a web application developed using ASP.NET MVC and Firebase Authentication, allowing users to securely register, log in, and manage a personal library of books. Built for educational purposes, this project showcases how to implement user authentication and CRUD operations (Create, Read, Update, Delete) in a clean MVC architecture using Visual Studio Code." data-video="icons/videos/bookstore.mp4" data-github="https://github.com/Sasha-Tameka/BookstoreApp">
+          <div
+            class="card"
+            onclick="openModal(this)"
+            data-title="BookStore"
+            data-description="BookHive is a web application developed using ASP.NET MVC and Firebase Authentication, allowing users to securely register, log in, and manage a personal library of books. Built for educational purposes, this project showcases how to implement user authentication and CRUD operations (Create, Read, Update, Delete) in a clean MVC architecture using Visual Studio Code."
+            data-video="icons/videos/bookstore.mp4"
+            data-github="https://github.com/Sasha-Tameka/BookstoreApp"
+          >
             <span class="badge web">Web</span>
             <h3>BookStore</h3>
             <div class="tags">
@@ -169,10 +233,16 @@
               <span>JavaScript</span>
               <span>C#</span>
               <span>CSS</span>
-              
             </div>
           </div>
-          <div class="card"onclick="openModal(this)" data-title="Enrollment" data-description="BookHive is a web application developed using ASP.NET MVC and Firebase Authentication, allowing users to securely register, log in, and manage a personal library of books. Built for educational purposes, this project showcases how to implement user authentication and CRUD operations (Create, Read, Update, Delete) in a clean MVC architecture using Visual Studio Code." data-video="icons/videos/enrollmentmp4.mp4" data-github="https://github.com/Sasha-Tameka/FinalCourseRegistration">
+          <div
+            class="card"
+            onclick="openModal(this)"
+            data-title="Enrollment"
+            data-description="BookHive is a web application developed using ASP.NET MVC and Firebase Authentication, allowing users to securely register, log in, and manage a personal library of books. Built for educational purposes, this project showcases how to implement user authentication and CRUD operations (Create, Read, Update, Delete) in a clean MVC architecture using Visual Studio Code."
+            data-video="icons/videos/enrollmentmp4.mp4"
+            data-github="https://github.com/Sasha-Tameka/FinalCourseRegistration"
+          >
             <span class="badge web">Web</span>
             <h3>Enrollment</h3>
             <div class="tags">
@@ -180,12 +250,11 @@
               <span>JavaScript</span>
               <span>C#</span>
               <span>CSS</span>
-              
             </div>
+          </div>
         </div>
-      </section>
-      
-
+      </div>
+    </section>
 
     <!--Contact Me-->
     <section class="contact" id="contact">
@@ -193,37 +262,29 @@
         <div class="title">
           <span>Contact Me</span>
         </div>
-        <p class="contact-subtext"
-        >Please fill out the form below so we can discuss any work opportunities. </p>
+        <p class="contact-subtext">
+          Please fill out the form below so we can discuss any work
+          opportunities.
+        </p>
         <form id="contact-form">
-            <input
-              type="text"
-              name="name"
-              placeholder="Name" required
-            />
-            <input
-              type="text"
-              name="email"
-              placeholder="E-mail" required
-            />
-            <textarea
-              name="message"
-              rows="6"
-              placeholder="Message" required
-            ></textarea>
-            <button type="submit">Submit</button>
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="text" name="email" placeholder="E-mail" required />
+          <textarea
+            name="message"
+            rows="6"
+            placeholder="Message"
+            required
+          ></textarea>
+          <button type="submit">Submit</button>
         </form>
         <p id="form-status"></p>
       </div>
     </section>
 
-
     <!--Footer Section-->
     <footer>
       <div class="text">
-        <span
-          >&copy; 2026 Sasha Palmer</span
-        >
+        <span>&copy; 2026 Sasha Palmer</span>
       </div>
     </footer>
 
@@ -234,13 +295,18 @@
         <h2 class="modal-header">Project Details</h2>
         <h3 class="modal-title"></h3>
         <p class="modal-description"></p>
-        <img class="modal-image"  src="" alt="Project Screenshot">
-        <video  class="modal-video" controls>
-          <source src="" type="video/mp4">
-        </video> 
-        <a class="modal-btn" href="https://github.com/Sasha-Tameka/calculator" target="_blank">View Code</a>
+        <img class="modal-image" src="" alt="Project Screenshot" />
+        <video class="modal-video" controls>
+          <source src="" type="video/mp4" />
+        </video>
+        <a
+          class="modal-btn"
+          href="https://github.com/Sasha-Tameka/calculator"
+          target="_blank"
+          >View Code</a
+        >
       </div>
     </div>
     <script src="script.js"></script>
   </body>
-  </html>
+</html>

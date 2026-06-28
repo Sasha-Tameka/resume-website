@@ -64,6 +64,7 @@ body {
 nav {
   width: 100%;
   height: 10vh;
+  position: relative;
 }
 
 .nav-container {
@@ -86,8 +87,7 @@ nav {
   color: #b74b4b;
   text-shadow: 0 0 10px #b74b4b;
 }
-.hamburg,
-.cancel {
+.hamburg {
   cursor: pointer;
   position: absolute;
   right: 15px;
@@ -96,6 +96,17 @@ nav {
   opacity: 0;
   pointer-events: none;
   font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+  z-index: 200;
+}
+
+.cancel {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: white;
+  font-size: clamp(2rem, 0.5rem + 4vw, 2.5rem);
+  z-index: 200;
 }
 
 .nav-container .links {
@@ -143,6 +154,10 @@ nav {
   transition: 0.2s linear;
 }
 
+.dropdown.active {
+  transform: translateY(0);
+}
+
 .dropdown .links a {
   display: flex;
   color: white;
@@ -154,7 +169,12 @@ nav {
 }
 
 .dropdown .links a:hover {
-  background-color: #b74b4b;
+  scale: 1.1;
+  color: #b74b4b;
+  border: 2px solid #b74b4b;
+  background-color: transparent;
+  font-weight: 700;
+  box-shadow: 0 0 40px #b74b4b;
 }
 
 section {
@@ -341,7 +361,7 @@ section .title span::after {
 .skills .boxes {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 18px;
   justify-content: center;
 }
 
@@ -350,14 +370,14 @@ section .title span::after {
   border: 2px solid #b74b4b;
   color: white;
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 12px;
   cursor: default;
   transition:
     background 0.3s ease,
     color 0.3s ease;
-  padding: 0.5rem;
+  padding: 0.9rem 1.4rem;
   position: relative;
   display: inline-flex;
   align-items: center;
@@ -366,8 +386,8 @@ section .title span::after {
 
 .skill-icon {
   display: none;
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
 }
 
@@ -724,4 +744,97 @@ footer {
   text-align: center;
   border-top: 1px solid #fff;
   color: #f1f1f1;
+}
+
+/* ============================
+   MOBILE RESPONSIVENESS
+   ============================ */
+
+@media (max-width: 768px) {
+  /* Nav: hide desktop links + contact button, show hamburger */
+  .nav-container .links {
+    display: none;
+  }
+
+  .contact-btn {
+    display: none;
+  }
+
+  .hamburg {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .logo {
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 1.6rem;
+  }
+
+  /* Hero section: stack image above text */
+  section .main-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .main-container .image {
+    width: 220px;
+    height: 220px;
+  }
+
+  .main-container .nav-content {
+    width: 100%;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+  }
+
+  .btn .hire-btn {
+    width: 80%;
+  }
+
+  /* About/Skills/Projects/Contact content width */
+  section .content {
+    width: 90%;
+  }
+
+  .skills .boxes .box {
+    font-size: 15px;
+    padding: 0.6rem 1rem;
+  }
+
+  .skill-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container .image {
+    width: 170px;
+    height: 170px;
+  }
+
+  .nav-content .typewriter {
+    font-size: 1.4rem;
+  }
+
+  .skills .boxes .box {
+    font-size: 13px;
+    padding: 0.5rem 0.8rem;
+  }
+
+  .skill-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .btn .hire-btn {
+    width: 100%;
+    margin: 20px 0;
+  }
 }

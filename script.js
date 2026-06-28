@@ -56,6 +56,21 @@ function typeWriter() {
 
 typeWriter();
 
+/**Mobile Hamburger Menu */
+
+function hamburg() {
+  document.querySelector(".dropdown").classList.add("active");
+}
+
+function closeMenu() {
+  document.querySelector(".dropdown").classList.remove("active");
+}
+
+// Auto-close the dropdown when someone taps a link inside it
+document.querySelectorAll(".dropdown .links a").forEach((link) => {
+  link.addEventListener("click", closeMenu);
+});
+
 /**Modal Cards */
 
 function openModal(card) {
